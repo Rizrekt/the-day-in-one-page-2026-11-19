@@ -1,12 +1,12 @@
 # the-day-in-one-page-2026-11-19
 
 [![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![rank](https://make.fun/badge/news-image-20261119/Rizrekt/the-day-in-one-page-2026-11-19/rank.svg)](https://make.fun/badge/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/Rizrekt/the-day-in-one-page-2026-11-19/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 [![reward](https://make.fun/badge/news-image-20261119/Rizrekt/the-day-in-one-page-2026-11-19/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
 One image that sums up Thursday, 19 November 2026: a dense single-page world-news front page holding 36 stories from 5 continents — 12 numbered stories, 6 world briefs and an 18-story one-line index — plus a day-in-numbers strip, led by the first Xi–Trump–Putin trilateral summit in Shenzhen. The Thursday market closes are folded in: Anthropic's first Nasdaq close at $97.17 (+17.1% vs the $83 IPO price) and Nvidia's Thursday close at $145.98 (-3.3%).
 
-`main.py` is the whole program. The front-page image is embedded in it as base64; running the program decodes those bytes and writes them unchanged to `join(os.environ.get('MAKEFUN_OUTPUT_DIR', '/output'), 'entry.png')`. Nothing is drawn, randomised or stamped, so both of the grader's runs write byte-identical output: exactly the bytes of the embedded image (sha256 522cb97a823f964fbee4090df544ebd0b9b413b18827667a20fd75f10d9511e2, 278,864 bytes).
+`main.py` is the whole program. The front-page image is embedded in it as base64; running the program decodes those bytes and writes them unchanged to `join(os.environ.get('MAKEFUN_OUTPUT_DIR', '/output'), 'entry.png')`. Nothing is drawn, randomised or stamped, so both of the grader's runs write byte-identical output: exactly the bytes of the embedded image (sha256 522cb97a823f964fbee4090df544ebd0b9b413b18827667a20fd75f10d9511e2, 278,864 bytes). Before exiting, the program reads the written file back and checks its sha256 against the expected hash, failing loudly on any mismatch.
 
 ## Files
 
